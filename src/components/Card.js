@@ -1,7 +1,6 @@
 import React from "react";
 import line from "../assest/line.png";
-import imgBorder from "../assest/img-border.png";
-import country from "../assest/country.png";
+import imgBorder from "../assest/img-border.png"; 
 import topBadgeOne from "../assest/top1_badge.png";
 import topBadgeTwo from "../assest/top2_badge.png";
 import topBadgeThree from "../assest/top3_badge.png";
@@ -10,12 +9,11 @@ import angel from "../assest/demo badges/angel.png";
 import arab_money from "../assest/demo badges/arab_money.png";
 import gentle_guy from "../assest/demo badges/gentle_guy.png";
 import kiss_star from "../assest/demo badges/kiss_star.png";
-import marks_man from "../assest/demo badges/marks_man.png";
-import model from "../assest/model.jpg";
+import marks_man from "../assest/demo badges/marks_man.png"; 
 
 const Card = ({ data }) => {
   return (
-    <div className="mx-5 mt-20">
+    <div className="mx-5 mt-4">
       <div className="relative">
         <div className="absolute pl-5 md:pl-10 lg:pl-20 lg:pr-16 py-3 md:py-5 lg:py-11 2xl:py-16 flex justify-between h-full w-full">
           <div className="flex">
@@ -34,7 +32,7 @@ const Card = ({ data }) => {
           </div>
           <div className="md:pt-5 w-full lg:w-auto">
             <h4 className="text-white text-xs md:text-2xl lg:text-5xl font-bold">
-              {data?.name.slice(0, 13)}...
+              {data?.name.slice(0, 10)}...
             </h4>
             <h4 className="text-[#ffeb8a] text-xs md:text-2xl lg:text-5xl font-semibold lg:mt-4">
               Hive ID: {data?.hiveId}
