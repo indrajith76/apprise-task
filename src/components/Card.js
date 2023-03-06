@@ -1,6 +1,6 @@
 import React from "react";
 import line from "../assest/line.png";
-import imgBorder from "../assest/img-border.png"; 
+import imgBorder from "../assest/img-border.png";
 import topBadgeOne from "../assest/top1_badge.png";
 import topBadgeTwo from "../assest/top2_badge.png";
 import topBadgeThree from "../assest/top3_badge.png";
@@ -9,7 +9,7 @@ import angel from "../assest/demo badges/angel.png";
 import arab_money from "../assest/demo badges/arab_money.png";
 import gentle_guy from "../assest/demo badges/gentle_guy.png";
 import kiss_star from "../assest/demo badges/kiss_star.png";
-import marks_man from "../assest/demo badges/marks_man.png"; 
+import marks_man from "../assest/demo badges/marks_man.png";
 
 const Card = ({ data }) => {
   return (
@@ -18,7 +18,15 @@ const Card = ({ data }) => {
         <div className="absolute pl-5 md:pl-10 lg:pl-20 lg:pr-16 py-3 md:py-5 lg:py-11 2xl:py-16 flex justify-between h-full w-full">
           <div className="flex">
             <div className="flex flex-col items-center justify-between md:py-5 mr-2 md:mr-5">
-              <img src={topBadgeOne} className="w-4 md:w-8 lg:w-full" alt="" />
+              <img
+                src={
+                  (data?.badge == "top1" && topBadgeOne) ||
+                  (data?.badge == "top2" && topBadgeTwo) ||
+                  topBadgeThree
+                }
+                className="w-4 md:w-8 lg:w-full"
+                alt=""
+              />
               <img
                 src={data?.countryImg}
                 className="w-5 md:w-12 border border-[#ffeb8a] rounded-full p-[2px] md:p-2"
